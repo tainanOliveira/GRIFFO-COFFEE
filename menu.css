@@ -1,0 +1,97 @@
+.container-menu {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+  'h t a'
+  'h t b'
+  'g g g'
+  ;
+  grid-auto-rows:18% 70% 12%  ;
+  grid-auto-columns:  1fr 4fr 6.8fr ;
+ 
+}
+
+.container-intes {
+  font-size: 30px;
+  text-align: center;
+}
+.container-intes:nth-child(1) {
+  grid-area: h;
+  background-color: #302D2D;
+}
+.container-intes:nth-child(2) {
+grid-area: t;
+background-color: #5B1616;
+border: 0.1rem solid #BC2828 ;
+}
+.container-intes:nth-child(3) {
+  grid-area: a;
+  background-color: #420e0e;
+  padding: 0;
+}
+.container-intes:nth-child(4) {
+  grid-area: b;}
+.container-intes:nth-child(5) {
+  grid-area: g;
+  background-color: #5B1616; 
+ border-top: 0.1rem solid #BC2828 ;
+ }
+.cart-info{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+
+
+
+
+.conteinerlogo {
+  margin: auto;
+  width: 80%; /* A div vai ocupar 80% da largura disponível */
+  height: 200px; /* Ajuste a altura conforme necessário */
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center; /* Centraliza a imagem verticalmente */
+  overflow: hidden; /* Garante que a imagem não ultrapasse a div */
+  position: relative;
+}
+.cart-info {
+  display: flex;
+  align-items: center; /* Alinha o ícone e o texto verticalmente */
+  gap: 10px; /* Espaço entre o ícone e o preço */
+  justify-content: center; /* Alinha o conteúdo no centro */
+  
+}
+
+.conteinerlogo img {
+  max-width: 100%; /* A imagem não vai ultrapassar a largura da div */
+  max-height: 100%; /* A imagem vai ter a altura máxima igual à da div */
+  object-fit: contain; /* Mantém a proporção da imagem */
+  position: absolute; /* A imagem será posicionada dentro da div */
+}
+
+.nav-menu ul {
+  list-style: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o preenchimento da lista */
+  margin: 0; }
+
+.nav-menu li{
+ padding-bottom: 10%;}
+
+
+.nav-menu li a{
+  font-size: 0.6em;
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  
+}
+.nav-menu li a.active {
+  color: #daa520 ; /* Cor do texto */
+  border-radius: 5px; /* Opção de borda arredondada */
+}
+
+/* Estilo para o conteúdo principal da div */

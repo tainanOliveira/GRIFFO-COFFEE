@@ -1,0 +1,30 @@
+#pagamento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #302D2D
+}
+
+.payment-option {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color:#D20F0F;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 60%;
+    height: 60px;  /* Ajuste para um tamanho mais adequado */
+    margin: 1rem 0;  /* Espaçamento entre os botões */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 2rem;
+}
+
+.payment-option:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

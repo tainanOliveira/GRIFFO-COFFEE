@@ -1,0 +1,133 @@
+#imagem-carrino{
+    width: 100%;
+    height: 35%;
+   
+}
+#imagem-carrino img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#pedidos-carrinho{
+    height: 65%;
+    background-color:#302D2D;
+}
+#pedidos-carrinho-confirmar{
+    width: 100%;
+    padding: 0  1.5rem ;
+    height: 85%;
+}
+#pedidos-carrinho-confirmar h1{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+    
+}
+#pedidos-carrinho-confirmar p{
+    padding-top: 10px;
+    color: #daa520;
+    
+}
+#pedidos-scroll{
+    height: 70%;
+    overflow-y: scroll; /* Mantém a rolagem */
+    scrollbar-width: none; /* Esconde o scroll no Firefox */
+    -ms-overflow-style: none; /* Esconde o scroll no Edge/IE */
+}
+#pedidos-scrol::-webkit-scrollbar {
+    display: none;
+}
+.pedidos-carrinho-botam{
+    height: 25%;
+   
+}
+#pedidos-carrinho {
+    width: 100%;
+    text-align: center;
+    height: 65%;
+}
+
+/* Título dos pedidos */
+#pedidos-carrinho h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color:#daa520 ;
+}
+
+/* Estiliza a lista de pedidos */
+#pedidos-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#pedidos-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #413f3f ;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+/* Estiliza o valor total */
+#total-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fffcfc;
+}
+
+/* Botão de confirmar compra */
+#pedidos-carrinho-botam {
+    width: 100%;
+   background-color: rgb(82, 56, 56);
+    height: 15%;
+}
+.remover-item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.remover-item .fa-trash {
+    color:#daa520 ;
+    font-size: 1.1rem;
+}
+#pedidos-carrinho-botam {
+    width: 100%;
+    height: 15%;
+    background-color:#302D2D;
+    /* Centraliza os itens */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 4rem; /* Espaço entre os botões */
+}
+
+#pedidos-carrinho-botam button {
+    font-family:'Courier New', Courier, monospace ;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    border: 0.1em solid #5f2803;
+    border-radius: 5px;
+    cursor: pointer;
+   
+
+}
+#botam-pedidos-menu button{
+    background-color: transparent;
+}
+#confirmar-compra{
+    background-color: #daa520;
+}
+
+#pedidos-carrinho-botam button:hover {
+    background-color: rgb(62, 214, 62);
+}

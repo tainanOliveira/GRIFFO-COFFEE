@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="debito.css">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="pagamento.css">
+
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="conteiner" > 
+        <div class="checkout-panel">
+            <div class="panel-body">
+              <h2 class="title">Confira aqui!</h2>
+           
+              <div class="progress-bar">
+                <div class="step active"></div>
+                <div class="step active"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+              </div>
+           
+              <div class="payment-method">
+                <label for="card" class="method card">
+                    <div class="card-logos">
+                        <img src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png"/>
+                        <img src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png"/>
+                    </div>
+            
+                    <div class="radio-input">
+                        <input id="card" type="radio" name="payment">
+                        Pague <span class="total-value">R$ 0,00</span> com cartão de débito
+                    </div>
+                </label>
+            
+                <label for="paypal" class="method paypal">
+                    <img src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png"/>
+                    <div class="radio-input">
+                        <input id="paypal" type="radio" name="payment">
+                        Pague <span class="total-value">R$ 0,00</span> com PayPal
+                    </div>
+                </label>
+              </div>
+           
+              <div class="input-fields">
+                <div class="column-1">
+                  <label for="cardholder">Name</label>
+                  <input type="text" id="cardholder" />
+           
+                  <div class="small-inputs">
+                    <div>
+                      <label for="date">Valid date</label>
+                      <input type="text" id="date"/>
+                    </div>
+           
+                    <div>
+                      <label for="verification">CVV / CVC *</label>
+                      <input type="password" id="verification"/>
+                    </div>
+                  </div>
+           
+                </div>
+                <div class="column-2">
+                  <label for="cardnumber">Card Number</label>
+                  <input type="password" id="cardnumber"/>
+           
+                  <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+                </div>
+              </div>
+            </div>
+           
+            <div class="panel-footer">
+            <a href="pagamento.html"> <button class="btn back-btn">Back</button></a>
+              <button class="btn next-btn">Confirmar</button>
+            </div>
+          </div>
+          
+
+    </div>
+    <script src="carrinho.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        
+    $(document).ready(function() {
+    
+    $('.method').on('click', function() {
+        $('.method').removeClass('blue-border');
+        $(this).addClass('blue-border');
+    });
+    
+    })
+    var $cardInput = $('.input-fields input');
+    
+    $('.next-btn').on('click', function(e) {
+    
+    $cardInput.removeClass('warning');
+    
+    $cardInput.each(function() {    
+        var $this = $(this);
+        if (!$this.val()) {
+        $this.addClass('warning');
+        }
+    })
+    });
+    </script>
+</body>
+</html>

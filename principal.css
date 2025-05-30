@@ -1,0 +1,139 @@
+/* Resetando margens e preenchimentos padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Centralizando o conteúdo no corpo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(91,22,22);
+    background: linear-gradient(90deg, rgba(91,22,22,1) 0%, rgba(36,33,33,1) 100%);
+
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+/* Estilização do contêiner principal */
+.conteiner {
+
+    width: 35%; /* Largura do contêiner */
+    height: 90%; /* Altura do contêiner */
+    border: 1em solid black; /* Borda preta */
+    border-radius: 1rem;
+    position: relative; /* Contexto para posicionamento absoluto de elementos filhos */
+}
+
+/* Estilização do contêiner da imagem de fundo */
+.conteiner-imagem-fundo {
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    position: relative; /* Para posicionar elementos dentro dele */
+}
+
+/* Garantindo que a imagem ocupe todo o espaço sem distorção */
+.conteiner-imagem-fundo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobrir toda a área mantendo a proporção */
+}
+
+/* Definindo a animação para o texto subir e descer */
+@keyframes subirDescer {
+    0% {
+        transform: translate(-50%, -50%) translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-25px); /* Sobe 30px */
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(0); /* Volta à posição inicial */
+    }
+}
+
+/* Estilização do texto 'click' e aplicação da animação */
+.conteiner-imagem-fundo p {
+    position: absolute; /* Posicionamento absoluto dentro do contêiner */
+    top: 95%; /* Posição vertical inicial */
+    left: 50%; /* Posição horizontal central */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: rgba(138, 92, 54, 0.747); /* Cor do texto */
+    font-size: 1.4rem; /* Tamanho da fonte */
+    font-family: 'Times New Roman', Times, serif; /* Fonte */
+    z-index: 1; /* Garante que o texto fique sobre a imagem */
+    animation: subirDescer 2s infinite ease-in-out; /* Aplica a animação de subir e descer */
+}
+/* Container do Carrinho */
+.container-intes:nth-child(4)  {
+   display: flex;                /* Define o layout para Flexbox */
+    align-items: center;          /* Alinha os itens verticalmente ao centro */
+    justify-content: center;      /* Alinha os itens horizontalmente ao centro */
+    gap: 5rem;                    /* Espaçamento entre os itens */
+                /* Altura da div */
+}
+/* Estilo do botão "menu" */
+#ver-carrinho{
+
+        background-color: #3f0a0a;
+        color: #daa520;                /* Cor do texto */
+        border: 0.1rem solid #2b0303;                  /* Remove a borda padrão */
+        border-radius: 5px;            /* Bordas arredondadas */
+        padding: 5px 20px;            /* Espaçamento interno (topo e lateral) */
+        font-size: 1rem;               /* Tamanho da fonte */
+        cursor: pointer;               /* Muda o cursor para indicar interatividade */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição */
+        margin-left: 2rem;
+}
+#ver-carrinho:hover {
+    border: 0.1rem solid  #7c0707;    /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px);   /* Efeito de elevação */
+}
+
+/* Efeito ao pressionar o botão */
+#ver-carrinho:active {
+    transform: translateY(2px);    /* Efeito de pressionar (aparece um movimento para baixo) */
+}
+
+.btn-cart {
+    background-color: #16be94;     /* Cor de fundo */
+    color: white;                  /* Cor do texto */
+    border: none;                  /* Remove a borda padrão */
+    border-radius: 5px;            /* Bordas arredondadas */
+    padding: 5px 10px;            /* Espaçamento interno (topo e lateral) */
+    font-size: 1rem;               /* Tamanho da fonte */
+    cursor: pointer;               /* Muda o cursor para indicar interatividade */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição */
+}
+
+/* Efeito ao passar o mouse */
+.btn-cart:hover {
+    background-color: #13a779;     /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px);   /* Efeito de elevação */
+}
+
+/* Efeito ao pressionar o botão */
+.btn-cart:active {
+    transform: translateY(2px);    /* Efeito de pressionar (aparece um movimento para baixo) */
+}
+.cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.fa-cart-shopping {
+    font-size: 3rem;
+    color: #daa520;
+    margin-left: -5rem;
+}
+
+#cart-value {
+    margin: 0 6rem 0 0 ;
+    font-size: 1.5rem; /* Ajuste conforme necessário */
+    color: wheat;
+}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="pagamento.css">
+
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="conteiner" > 
+        <form method="POST" ação="https://secure.payzen.com.br/vads-payment/">
+            <input type="hidden" name="parametre1" value="valor1" />
+            <input type="hidden" name="parametre2" value="valor2" />
+            <input type="hidden" name="parametre3" value="valor3" />
+            <input type="hidden" name="assinatura" value="signature"/>
+            <input type="submit" name="pagar" value="Pagar"/>
+            </form>
+    </div>
+  
+    
+</body>
+</html>
